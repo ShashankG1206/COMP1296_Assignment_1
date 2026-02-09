@@ -76,3 +76,22 @@ if outlier_count > 0:
     print("Total outliers: ",outlier_count)    
 else:
         print("No outliers detected.")
+
+
+
+print("")
+print("")
+print("=== Summary Statistics ===")
+print("")
+
+count_values = len(values)  # Counts number of entries in list (values)
+min_values = round(min(values),2)  # Shows smallest entry/value in list (values)
+max_values = round(max(values),2)  # Shows largest entry/value in list (values)
+average_values = sum(values)/len(values)  # Calculates average of all entries in list (values) 
+
+print("Count:  ",count_values)    
+print("Minimum:  ",min_values)
+print("Maximum:  ",max_values)
+print("Average:  ",average_values)
+print("")
+print("")
