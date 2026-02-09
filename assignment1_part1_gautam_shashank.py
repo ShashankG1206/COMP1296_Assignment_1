@@ -14,3 +14,19 @@ print("")
 
 while True:
     user_input = input("Enter a number (or 'done' to finish): ")
+
+    # Checks if user wants to stop
+    if user_input == "done":
+       break
+
+    # Changes input into floating value
+    number = float(user_input)
+
+    # Add new inputs at last
+    values.append(number)
+
+    # Displays how many inputs/values are collected.
+    
+print("")
+print("Data collection complete.",len(values),"values recorded.")
+print("")
