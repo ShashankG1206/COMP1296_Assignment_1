@@ -45,3 +45,34 @@ if negative_count > 0:
 
 else:
     print("No negative values detected.")
+
+
+
+print("")
+print("")
+print("=== Outlier Detection ===")
+print("")
+
+
+threshold = float(input("Enter threshold for outlier detection: "))
+print("")
+outlier_count = 0
+
+# Displays Outliers in the list(values)
+
+# For finding out the outliers , a for loop runs through 
+# the list(values) and check each entry if it is greater than 
+# threshold and if yes, it will count each outlier and prints them
+
+for value in values:
+    if value > threshold:
+       if outlier_count == 0:
+          print("Outliers detected (values > ",threshold,"):")
+       outlier_count = outlier_count + 1
+       print(" - ",value)
+
+print("")
+if outlier_count > 0:
+    print("Total outliers: ",outlier_count)    
+else:
+        print("No outliers detected.")
