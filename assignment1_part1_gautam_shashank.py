@@ -24,9 +24,24 @@ while True:
 
     # Add new inputs at last
     values.append(number)
-
-    # Displays how many inputs/values are collected.
     
+     # Check for negative value
+    if number < 0:
+        print("< ⚠ Warning, Negative value detected.>")
+        negative_count = negative_count + 1
+
+
+
+ # Displays how many inputs/values are collected.
 print("")
 print("Data collection complete.",len(values),"values recorded.")
 print("")
+
+# Displays Negative count
+
+#just use simple logic of inequality(<,>,=)
+if negative_count > 0:
+    print("⚠ ",negative_count,"Negative values were flagged!")
+
+else:
+    print("No negative values detected.")
